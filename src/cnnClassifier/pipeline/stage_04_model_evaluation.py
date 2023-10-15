@@ -13,7 +13,7 @@ class EvaluationPipeline:
         evaluation = Evaluation(eval_config)
         evaluation.evaluation()
         evaluation.save_score()
-        evaluation.log_into_mlflow()
+        # evaluation.log_into_mlflow()              # comment bcoz we have fixed hyper parameters
 
 if __name__ == '__main__':
     try:
